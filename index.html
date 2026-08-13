@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRENZAS | Observatorio de DD.HH. de los Pueblos Étnicos</title>
+<meta name="description" content="Observatorio de la Defensoría del Pueblo sobre la garantía de los derechos de los pueblos indígenas, negros, afrocolombianos, raizales, palenqueros y Rrom en Colombia.">
+<meta name="theme-color" content="#f6f2ea">
+<link rel="icon" href="assets/isotipo-trenzas.png" type="image/png">
+
+<!-- ==========================================================================
+     AVISO IMPORTANTE
+
+     1. TEXTO. Todo el contenido escrito es un borrador de maquetación. No
+        proviene de la Defensoría del Pueblo y no ha sido validado por nadie.
+        No se incluyó ninguna cifra a propósito.
+
+     2. FOTOGRAFÍA. Las imágenes son de comunidades reales e identificables:
+        pueblos Kogui, Wayuu, Puinave, U'wa, Wounaan y Arhuaco. Antes de
+        publicar hay que verificar derechos de uso, consentimiento de las
+        personas retratadas y crédito del fotógrafo. Los archivos de origen
+        llevan el prefijo FGS, que no se ha podido atribuir.
+
+     3. REPRESENTACIÓN. La carpeta de imágenes contiene ÚNICAMENTE pueblos
+        indígenas. La página nombra cinco pueblos: indígenas, negros,
+        afrocolombianos, raizales, palenqueros y Rrom. Faltan imágenes de
+        comunidades negras, afrocolombianas, raizales, palenqueras y Rrom.
+        Publicar así ilustra a cinco pueblos con las fotos de uno solo.
+
+     4. ANTES DE PUBLICAR: reemplazar el texto, borrar el bloque
+        <aside class="draft-notice">, resolver los puntos 2 y 3, y poner
+        destinos reales en los cinco enlaces de Recursos, que apuntan a "#".
+     ========================================================================== -->
+
+<!-- Las fuentes NO llevan <link rel="preload">. Un preload de fuente exige el
+     atributo crossorigin, que sobre file:// falla siempre: la peticion se
+     bloquea por CORS, se pierde el preload y la consola se llena de errores.
+     El @font-face de styles.css las carga sin problema en ambos casos. -->
+<link rel="preload" as="image" href="assets/hero-camino.webp" type="image/webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main>
+
+  <!-- ====================================================================
+       1. HERO
+       Familia de layout: fotografía a sangre con texto anclado abajo a la
+       izquierda. La marca va arriba, sola: es identidad, no navegación.
+       ==================================================================== -->
+  <section class="hero" aria-labelledby="titulo-principal">
+
+    <picture class="hero__media">
+      <source srcset="assets/hero-camino.webp" type="image/webp">
+      <img src="assets/hero-camino.jpg"
+           alt="Una familia del pueblo Kogui asciende por un camino de tierra en la Sierra Nevada de Santa Marta, cargando bultos de tela blanca."
+           width="1760" height="990" fetchpriority="high" decoding="async">
+    </picture>
+
+    <div class="hero__scrim" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+
+      <img class="hero__logo" src="assets/logo-trenzas-blanco.png"
+           alt="TRENZAS, Observatorio de DD.HH. de los Pueblos Étnicos"
+           width="880" height="336">
+
+      <div class="hero__text">
+        <h1 id="titulo-principal">Tejer datos para defender derechos.</h1>
+        <p class="hero__lede">
+          Observatorio de la Defensoría del Pueblo sobre los derechos de los
+          pueblos indígenas, negros, afrocolombianos, raizales, palenqueros
+          y Rrom.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#ejes">Explorar los ejes</a>
+          <a class="btn btn--onphoto" href="#recursos">Consultar recursos</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- La costura: el tejido del isotipo hecho regla. Se usa una sola vez,
+       en el punto donde la fotografía cede el paso al documento. -->
+  <div class="seam-wrap"><svg class="seam" viewBox="0 0 1400 60" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><clipPath id="sb0"><rect x="0" y="-20" width="23" height="100"/></clipPath><clipPath id="sb1"><rect x="23" y="-20" width="23" height="100"/></clipPath><clipPath id="sb2"><rect x="47" y="-20" width="23" height="100"/></clipPath><clipPath id="sb3"><rect x="70" y="-20" width="23" height="100"/></clipPath><clipPath id="sb4"><rect x="93" y="-20" width="23" height="100"/></clipPath><clipPath id="sb5"><rect x="117" y="-20" width="23" height="100"/></clipPath><clipPath id="sb6"><rect x="140" y="-20" width="23" height="100"/></clipPath><clipPath id="sb7"><rect x="163" y="-20" width="23" height="100"/></clipPath><clipPath id="sb8"><rect x="187" y="-20" width="23" height="100"/></clipPath><clipPath id="sb9"><rect x="210" y="-20" width="23" height="100"/></clipPath><clipPath id="sb10"><rect x="233" y="-20" width="23" height="100"/></clipPath><clipPath id="sb11"><rect x="257" y="-20" width="23" height="100"/></clipPath><clipPath id="sb12"><rect x="280" y="-20" width="23" height="100"/></clipPath><clipPath id="sb13"><rect x="303" y="-20" width="23" height="100"/></clipPath><clipPath id="sb14"><rect x="327" y="-20" width="23" height="100"/></clipPath><clipPath id="sb15"><rect x="350" y="-20" width="23" height="100"/></clipPath><clipPath id="sb16"><rect x="373" y="-20" width="23" height="100"/></clipPath><clipPath id="sb17"><rect x="397" y="-20" width="23" height="100"/></clipPath><clipPath id="sb18"><rect x="420" y="-20" width="23" height="100"/></clipPath><clipPath id="sb19"><rect x="443" y="-20" width="23" height="100"/></clipPath><clipPath id="sb20"><rect x="467" y="-20" width="23" height="100"/></clipPath><clipPath id="sb21"><rect x="490" y="-20" width="23" height="100"/></clipPath><clipPath id="sb22"><rect x="513" y="-20" width="23" height="100"/></clipPath><clipPath id="sb23"><rect x="537" y="-20" width="23" height="100"/></clipPath><clipPath id="sb24"><rect x="560" y="-20" width="23" height="100"/></clipPath><clipPath id="sb25"><rect x="583" y="-20" width="23" height="100"/></clipPath><clipPath id="sb26"><rect x="607" y="-20" width="23" height="100"/></clipPath><clipPath id="sb27"><rect x="630" y="-20" width="23" height="100"/></clipPath><clipPath id="sb28"><rect x="653" y="-20" width="23" height="100"/></clipPath><clipPath id="sb29"><rect x="677" y="-20" width="23" height="100"/></clipPath><clipPath id="sb30"><rect x="700" y="-20" width="23" height="100"/></clipPath><clipPath id="sb31"><rect x="723" y="-20" width="23" height="100"/></clipPath><clipPath id="sb32"><rect x="747" y="-20" width="23" height="100"/></clipPath><clipPath id="sb33"><rect x="770" y="-20" width="23" height="100"/></clipPath><clipPath id="sb34"><rect x="793" y="-20" width="23" height="100"/></clipPath><clipPath id="sb35"><rect x="817" y="-20" width="23" height="100"/></clipPath><clipPath id="sb36"><rect x="840" y="-20" width="23" height="100"/></clipPath><clipPath id="sb37"><rect x="863" y="-20" width="23" height="100"/></clipPath><clipPath id="sb38"><rect x="887" y="-20" width="23" height="100"/></clipPath><clipPath id="sb39"><rect x="910" y="-20" width="23" height="100"/></clipPath><clipPath id="sb40"><rect x="933" y="-20" width="23" height="100"/></clipPath><clipPath id="sb41"><rect x="957" y="-20" width="23" height="100"/></clipPath><clipPath id="sb42"><rect x="980" y="-20" width="23" height="100"/></clipPath><clipPath id="sb43"><rect x="1003" y="-20" width="23" height="100"/></clipPath><clipPath id="sb44"><rect x="1027" y="-20" width="23" height="100"/></clipPath><clipPath id="sb45"><rect x="1050" y="-20" width="23" height="100"/></clipPath><clipPath id="sb46"><rect x="1073" y="-20" width="23" height="100"/></clipPath><clipPath id="sb47"><rect x="1097" y="-20" width="23" height="100"/></clipPath><clipPath id="sb48"><rect x="1120" y="-20" width="23" height="100"/></clipPath><clipPath id="sb49"><rect x="1143" y="-20" width="23" height="100"/></clipPath><clipPath id="sb50"><rect x="1167" y="-20" width="23" height="100"/></clipPath><clipPath id="sb51"><rect x="1190" y="-20" width="23" height="100"/></clipPath><clipPath id="sb52"><rect x="1213" y="-20" width="23" height="100"/></clipPath><clipPath id="sb53"><rect x="1237" y="-20" width="23" height="100"/></clipPath><clipPath id="sb54"><rect x="1260" y="-20" width="23" height="100"/></clipPath><clipPath id="sb55"><rect x="1283" y="-20" width="23" height="100"/></clipPath><clipPath id="sb56"><rect x="1307" y="-20" width="23" height="100"/></clipPath><clipPath id="sb57"><rect x="1330" y="-20" width="23" height="100"/></clipPath><clipPath id="sb58"><rect x="1353" y="-20" width="23" height="100"/></clipPath><clipPath id="sb59"><rect x="1377" y="-20" width="23" height="100"/></clipPath><mask id="sm0" maskUnits="userSpaceOnUse" x="-20" y="-20" width="1440" height="100"><rect x="-20" y="-20" width="1440" height="100" fill="#fff"/><g fill="none" stroke="#000" stroke-width="19" stroke-linecap="butt"><g clip-path="url(#sb1)"><path d="M 4 13.9 L 13 13.0 L 22 14.7 L 31 18.8 L 39 24.5 L 48 31.1 L 57 37.5 L 66 42.8"/></g><g clip-path="url(#sb2)"><path d="M 28 26.7 L 36 20.6 L 45 15.9 L 54 13.3 L 63 13.3 L 71 15.9 L 80 20.6 L 89 26.7"/><path d="M 28 17.2 L 36 22.5 L 45 28.9 L 54 35.5 L 63 41.2 L 71 45.3 L 80 47.0 L 89 46.1"/></g><g clip-path="url(#sb3)"><path d="M 51 13.9 L 60 13.0 L 69 14.7 L 77 18.8 L 86 24.5 L 95 31.1 L 104 37.5 L 112 42.8"/><path d="M 51 33.3 L 60 39.4 L 69 44.1 L 77 46.7 L 86 46.7 L 95 44.1 L 104 39.4 L 112 33.3"/></g><g clip-path="url(#sb4)"><path d="M 74 17.2 L 83 22.5 L 92 28.9 L 101 35.5 L 109 41.2 L 118 45.3 L 127 47.0 L 136 46.1"/></g><g clip-path="url(#sb7)"><path d="M 144 13.9 L 153 13.0 L 162 14.7 L 171 18.8 L 179 24.5 L 188 31.1 L 197 37.5 L 206 42.8"/></g><g clip-path="url(#sb8)"><path d="M 168 26.7 L 176 20.6 L 185 15.9 L 194 13.3 L 203 13.3 L 211 15.9 L 220 20.6 L 229 26.7"/><path d="M 168 17.2 L 176 22.5 L 185 28.9 L 194 35.5 L 203 41.2 L 211 45.3 L 220 47.0 L 229 46.1"/></g><g clip-path="url(#sb9)"><path d="M 191 13.9 L 200 13.0 L 209 14.7 L 217 18.8 L 226 24.5 L 235 31.1 L 244 37.5 L 252 42.8"/><path d="M 191 33.3 L 200 39.4 L 209 44.1 L 217 46.7 L 226 46.7 L 235 44.1 L 244 39.4 L 252 33.3"/></g><g clip-path="url(#sb10)"><path d="M 214 17.2 L 223 22.5 L 232 28.9 L 241 35.5 L 249 41.2 L 258 45.3 L 267 47.0 L 276 46.1"/></g><g clip-path="url(#sb13)"><path d="M 284 13.9 L 293 13.0 L 302 14.7 L 311 18.8 L 319 24.5 L 328 31.1 L 337 37.5 L 346 42.8"/></g><g clip-path="url(#sb14)"><path d="M 308 26.7 L 316 20.6 L 325 15.9 L 334 13.3 L 343 13.3 L 351 15.9 L 360 20.6 L 369 26.7"/><path d="M 308 17.2 L 316 22.5 L 325 28.9 L 334 35.5 L 343 41.2 L 351 45.3 L 360 47.0 L 369 46.1"/></g><g clip-path="url(#sb15)"><path d="M 331 13.9 L 340 13.0 L 349 14.7 L 357 18.8 L 366 24.5 L 375 31.1 L 384 37.5 L 392 42.8"/><path d="M 331 33.3 L 340 39.4 L 349 44.1 L 357 46.7 L 366 46.7 L 375 44.1 L 384 39.4 L 392 33.3"/></g><g clip-path="url(#sb16)"><path d="M 354 17.2 L 363 22.5 L 372 28.9 L 381 35.5 L 389 41.2 L 398 45.3 L 407 47.0 L 416 46.1"/></g><g clip-path="url(#sb19)"><path d="M 424 13.9 L 433 13.0 L 442 14.7 L 451 18.8 L 459 24.5 L 468 31.1 L 477 37.5 L 486 42.8"/></g><g clip-path="url(#sb20)"><path d="M 448 26.7 L 456 20.6 L 465 15.9 L 474 13.3 L 483 13.3 L 491 15.9 L 500 20.6 L 509 26.7"/><path d="M 448 17.2 L 456 22.5 L 465 28.9 L 474 35.5 L 483 41.2 L 491 45.3 L 500 47.0 L 509 46.1"/></g><g clip-path="url(#sb21)"><path d="M 471 13.9 L 480 13.0 L 489 14.7 L 497 18.8 L 506 24.5 L 515 31.1 L 524 37.5 L 532 42.8"/><path d="M 471 33.3 L 480 39.4 L 489 44.1 L 497 46.7 L 506 46.7 L 515 44.1 L 524 39.4 L 532 33.3"/></g><g clip-path="url(#sb22)"><path d="M 494 17.2 L 503 22.5 L 512 28.9 L 521 35.5 L 529 41.2 L 538 45.3 L 547 47.0 L 556 46.1"/></g><g clip-path="url(#sb25)"><path d="M 564 13.9 L 573 13.0 L 582 14.7 L 591 18.8 L 599 24.5 L 608 31.1 L 617 37.5 L 626 42.8"/></g><g clip-path="url(#sb26)"><path d="M 588 26.7 L 596 20.6 L 605 15.9 L 614 13.3 L 623 13.3 L 631 15.9 L 640 20.6 L 649 26.7"/><path d="M 588 17.2 L 596 22.5 L 605 28.9 L 614 35.5 L 623 41.2 L 631 45.3 L 640 47.0 L 649 46.1"/></g><g clip-path="url(#sb27)"><path d="M 611 13.9 L 620 13.0 L 629 14.7 L 637 18.8 L 646 24.5 L 655 31.1 L 664 37.5 L 672 42.8"/><path d="M 611 33.3 L 620 39.4 L 629 44.1 L 637 46.7 L 646 46.7 L 655 44.1 L 664 39.4 L 672 33.3"/></g><g clip-path="url(#sb28)"><path d="M 634 17.2 L 643 22.5 L 652 28.9 L 661 35.5 L 669 41.2 L 678 45.3 L 687 47.0 L 696 46.1"/></g><g clip-path="url(#sb31)"><path d="M 704 13.9 L 713 13.0 L 722 14.7 L 731 18.8 L 739 24.5 L 748 31.1 L 757 37.5 L 766 42.8"/></g><g clip-path="url(#sb32)"><path d="M 728 26.7 L 736 20.6 L 745 15.9 L 754 13.3 L 763 13.3 L 771 15.9 L 780 20.6 L 789 26.7"/><path d="M 728 17.2 L 736 22.5 L 745 28.9 L 754 35.5 L 763 41.2 L 771 45.3 L 780 47.0 L 789 46.1"/></g><g clip-path="url(#sb33)"><path d="M 751 13.9 L 760 13.0 L 769 14.7 L 777 18.8 L 786 24.5 L 795 31.1 L 804 37.5 L 812 42.8"/><path d="M 751 33.3 L 760 39.4 L 769 44.1 L 777 46.7 L 786 46.7 L 795 44.1 L 804 39.4 L 812 33.3"/></g><g clip-path="url(#sb34)"><path d="M 774 17.2 L 783 22.5 L 792 28.9 L 801 35.5 L 809 41.2 L 818 45.3 L 827 47.0 L 836 46.1"/></g><g clip-path="url(#sb37)"><path d="M 844 13.9 L 853 13.0 L 862 14.7 L 871 18.8 L 879 24.5 L 888 31.1 L 897 37.5 L 906 42.8"/></g><g clip-path="url(#sb38)"><path d="M 868 26.7 L 876 20.6 L 885 15.9 L 894 13.3 L 903 13.3 L 911 15.9 L 920 20.6 L 929 26.7"/><path d="M 868 17.2 L 876 22.5 L 885 28.9 L 894 35.5 L 903 41.2 L 911 45.3 L 920 47.0 L 929 46.1"/></g><g clip-path="url(#sb39)"><path d="M 891 13.9 L 900 13.0 L 909 14.7 L 917 18.8 L 926 24.5 L 935 31.1 L 944 37.5 L 952 42.8"/><path d="M 891 33.3 L 900 39.4 L 909 44.1 L 917 46.7 L 926 46.7 L 935 44.1 L 944 39.4 L 952 33.3"/></g><g clip-path="url(#sb40)"><path d="M 914 17.2 L 923 22.5 L 932 28.9 L 941 35.5 L 949 41.2 L 958 45.3 L 967 47.0 L 976 46.1"/></g><g clip-path="url(#sb43)"><path d="M 984 13.9 L 993 13.0 L 1002 14.7 L 1011 18.8 L 1019 24.5 L 1028 31.1 L 1037 37.5 L 1046 42.8"/></g><g clip-path="url(#sb44)"><path d="M 1008 26.7 L 1016 20.6 L 1025 15.9 L 1034 13.3 L 1043 13.3 L 1051 15.9 L 1060 20.6 L 1069 26.7"/><path d="M 1008 17.2 L 1016 22.5 L 1025 28.9 L 1034 35.5 L 1043 41.2 L 1051 45.3 L 1060 47.0 L 1069 46.1"/></g><g clip-path="url(#sb45)"><path d="M 1031 13.9 L 1040 13.0 L 1049 14.7 L 1057 18.8 L 1066 24.5 L 1075 31.1 L 1084 37.5 L 1092 42.8"/><path d="M 1031 33.3 L 1040 39.4 L 1049 44.1 L 1057 46.7 L 1066 46.7 L 1075 44.1 L 1084 39.4 L 1092 33.3"/></g><g clip-path="url(#sb46)"><path d="M 1054 17.2 L 1063 22.5 L 1072 28.9 L 1081 35.5 L 1089 41.2 L 1098 45.3 L 1107 47.0 L 1116 46.1"/></g><g clip-path="url(#sb49)"><path d="M 1124 13.9 L 1133 13.0 L 1142 14.7 L 1151 18.8 L 1159 24.5 L 1168 31.1 L 1177 37.5 L 1186 42.8"/></g><g clip-path="url(#sb50)"><path d="M 1148 26.7 L 1156 20.6 L 1165 15.9 L 1174 13.3 L 1183 13.3 L 1191 15.9 L 1200 20.6 L 1209 26.7"/><path d="M 1148 17.2 L 1156 22.5 L 1165 28.9 L 1174 35.5 L 1183 41.2 L 1191 45.3 L 1200 47.0 L 1209 46.1"/></g><g clip-path="url(#sb51)"><path d="M 1171 13.9 L 1180 13.0 L 1189 14.7 L 1197 18.8 L 1206 24.5 L 1215 31.1 L 1224 37.5 L 1232 42.8"/><path d="M 1171 33.3 L 1180 39.4 L 1189 44.1 L 1197 46.7 L 1206 46.7 L 1215 44.1 L 1224 39.4 L 1232 33.3"/></g><g clip-path="url(#sb52)"><path d="M 1194 17.2 L 1203 22.5 L 1212 28.9 L 1221 35.5 L 1229 41.2 L 1238 45.3 L 1247 47.0 L 1256 46.1"/></g><g clip-path="url(#sb55)"><path d="M 1264 13.9 L 1273 13.0 L 1282 14.7 L 1291 18.8 L 1299 24.5 L 1308 31.1 L 1317 37.5 L 1326 42.8"/></g><g clip-path="url(#sb56)"><path d="M 1288 26.7 L 1296 20.6 L 1305 15.9 L 1314 13.3 L 1323 13.3 L 1331 15.9 L 1340 20.6 L 1349 26.7"/><path d="M 1288 17.2 L 1296 22.5 L 1305 28.9 L 1314 35.5 L 1323 41.2 L 1331 45.3 L 1340 47.0 L 1349 46.1"/></g><g clip-path="url(#sb57)"><path d="M 1311 13.9 L 1320 13.0 L 1329 14.7 L 1337 18.8 L 1346 24.5 L 1355 31.1 L 1364 37.5 L 1372 42.8"/><path d="M 1311 33.3 L 1320 39.4 L 1329 44.1 L 1337 46.7 L 1346 46.7 L 1355 44.1 L 1364 39.4 L 1372 33.3"/></g><g clip-path="url(#sb58)"><path d="M 1334 17.2 L 1343 22.5 L 1352 28.9 L 1361 35.5 L 1369 41.2 L 1378 45.3 L 1387 47.0 L 1396 46.1"/></g></g></mask><mask id="sm1" maskUnits="userSpaceOnUse" x="-20" y="-20" width="1440" height="100"><rect x="-20" y="-20" width="1440" height="100" fill="#fff"/><g fill="none" stroke="#000" stroke-width="19" stroke-linecap="butt"><g clip-path="url(#sb0)"><path d="M -19 17.2 L -10 22.5 L -1 28.9 L 7 35.5 L 16 41.2 L 25 45.3 L 34 47.0 L 42 46.1"/><path d="M -19 26.7 L -10 20.6 L -1 15.9 L 7 13.3 L 16 13.3 L 25 15.9 L 34 20.6 L 42 26.7"/></g><g clip-path="url(#sb1)"><path d="M 4 33.3 L 13 39.4 L 22 44.1 L 31 46.7 L 39 46.7 L 48 44.1 L 57 39.4 L 66 33.3"/><path d="M 4 13.9 L 13 13.0 L 22 14.7 L 31 18.8 L 39 24.5 L 48 31.1 L 57 37.5 L 66 42.8"/></g><g clip-path="url(#sb2)"><path d="M 28 17.2 L 36 22.5 L 45 28.9 L 54 35.5 L 63 41.2 L 71 45.3 L 80 47.0 L 89 46.1"/></g><g clip-path="url(#sb5)"><path d="M 98 13.9 L 106 13.0 L 115 14.7 L 124 18.8 L 133 24.5 L 141 31.1 L 150 37.5 L 159 42.8"/></g><g clip-path="url(#sb6)"><path d="M 121 17.2 L 130 22.5 L 139 28.9 L 147 35.5 L 156 41.2 L 165 45.3 L 174 47.0 L 182 46.1"/><path d="M 121 26.7 L 130 20.6 L 139 15.9 L 147 13.3 L 156 13.3 L 165 15.9 L 174 20.6 L 182 26.7"/></g><g clip-path="url(#sb7)"><path d="M 144 33.3 L 153 39.4 L 162 44.1 L 171 46.7 L 179 46.7 L 188 44.1 L 197 39.4 L 206 33.3"/><path d="M 144 13.9 L 153 13.0 L 162 14.7 L 171 18.8 L 179 24.5 L 188 31.1 L 197 37.5 L 206 42.8"/></g><g clip-path="url(#sb8)"><path d="M 168 17.2 L 176 22.5 L 185 28.9 L 194 35.5 L 203 41.2 L 211 45.3 L 220 47.0 L 229 46.1"/></g><g clip-path="url(#sb11)"><path d="M 238 13.9 L 246 13.0 L 255 14.7 L 264 18.8 L 273 24.5 L 281 31.1 L 290 37.5 L 299 42.8"/></g><g clip-path="url(#sb12)"><path d="M 261 17.2 L 270 22.5 L 279 28.9 L 287 35.5 L 296 41.2 L 305 45.3 L 314 47.0 L 322 46.1"/><path d="M 261 26.7 L 270 20.6 L 279 15.9 L 287 13.3 L 296 13.3 L 305 15.9 L 314 20.6 L 322 26.7"/></g><g clip-path="url(#sb13)"><path d="M 284 33.3 L 293 39.4 L 302 44.1 L 311 46.7 L 319 46.7 L 328 44.1 L 337 39.4 L 346 33.3"/><path d="M 284 13.9 L 293 13.0 L 302 14.7 L 311 18.8 L 319 24.5 L 328 31.1 L 337 37.5 L 346 42.8"/></g><g clip-path="url(#sb14)"><path d="M 308 17.2 L 316 22.5 L 325 28.9 L 334 35.5 L 343 41.2 L 351 45.3 L 360 47.0 L 369 46.1"/></g><g clip-path="url(#sb17)"><path d="M 378 13.9 L 386 13.0 L 395 14.7 L 404 18.8 L 413 24.5 L 421 31.1 L 430 37.5 L 439 42.8"/></g><g clip-path="url(#sb18)"><path d="M 401 17.2 L 410 22.5 L 419 28.9 L 427 35.5 L 436 41.2 L 445 45.3 L 454 47.0 L 462 46.1"/><path d="M 401 26.7 L 410 20.6 L 419 15.9 L 427 13.3 L 436 13.3 L 445 15.9 L 454 20.6 L 462 26.7"/></g><g clip-path="url(#sb19)"><path d="M 424 33.3 L 433 39.4 L 442 44.1 L 451 46.7 L 459 46.7 L 468 44.1 L 477 39.4 L 486 33.3"/><path d="M 424 13.9 L 433 13.0 L 442 14.7 L 451 18.8 L 459 24.5 L 468 31.1 L 477 37.5 L 486 42.8"/></g><g clip-path="url(#sb20)"><path d="M 448 17.2 L 456 22.5 L 465 28.9 L 474 35.5 L 483 41.2 L 491 45.3 L 500 47.0 L 509 46.1"/></g><g clip-path="url(#sb23)"><path d="M 518 13.9 L 526 13.0 L 535 14.7 L 544 18.8 L 553 24.5 L 561 31.1 L 570 37.5 L 579 42.8"/></g><g clip-path="url(#sb24)"><path d="M 541 17.2 L 550 22.5 L 559 28.9 L 567 35.5 L 576 41.2 L 585 45.3 L 594 47.0 L 602 46.1"/><path d="M 541 26.7 L 550 20.6 L 559 15.9 L 567 13.3 L 576 13.3 L 585 15.9 L 594 20.6 L 602 26.7"/></g><g clip-path="url(#sb25)"><path d="M 564 33.3 L 573 39.4 L 582 44.1 L 591 46.7 L 599 46.7 L 608 44.1 L 617 39.4 L 626 33.3"/><path d="M 564 13.9 L 573 13.0 L 582 14.7 L 591 18.8 L 599 24.5 L 608 31.1 L 617 37.5 L 626 42.8"/></g><g clip-path="url(#sb26)"><path d="M 588 17.2 L 596 22.5 L 605 28.9 L 614 35.5 L 623 41.2 L 631 45.3 L 640 47.0 L 649 46.1"/></g><g clip-path="url(#sb29)"><path d="M 658 13.9 L 666 13.0 L 675 14.7 L 684 18.8 L 693 24.5 L 701 31.1 L 710 37.5 L 719 42.8"/></g><g clip-path="url(#sb30)"><path d="M 681 17.2 L 690 22.5 L 699 28.9 L 707 35.5 L 716 41.2 L 725 45.3 L 734 47.0 L 742 46.1"/><path d="M 681 26.7 L 690 20.6 L 699 15.9 L 707 13.3 L 716 13.3 L 725 15.9 L 734 20.6 L 742 26.7"/></g><g clip-path="url(#sb31)"><path d="M 704 33.3 L 713 39.4 L 722 44.1 L 731 46.7 L 739 46.7 L 748 44.1 L 757 39.4 L 766 33.3"/><path d="M 704 13.9 L 713 13.0 L 722 14.7 L 731 18.8 L 739 24.5 L 748 31.1 L 757 37.5 L 766 42.8"/></g><g clip-path="url(#sb32)"><path d="M 728 17.2 L 736 22.5 L 745 28.9 L 754 35.5 L 763 41.2 L 771 45.3 L 780 47.0 L 789 46.1"/></g><g clip-path="url(#sb35)"><path d="M 798 13.9 L 806 13.0 L 815 14.7 L 824 18.8 L 833 24.5 L 841 31.1 L 850 37.5 L 859 42.8"/></g><g clip-path="url(#sb36)"><path d="M 821 17.2 L 830 22.5 L 839 28.9 L 847 35.5 L 856 41.2 L 865 45.3 L 874 47.0 L 882 46.1"/><path d="M 821 26.7 L 830 20.6 L 839 15.9 L 847 13.3 L 856 13.3 L 865 15.9 L 874 20.6 L 882 26.7"/></g><g clip-path="url(#sb37)"><path d="M 844 33.3 L 853 39.4 L 862 44.1 L 871 46.7 L 879 46.7 L 888 44.1 L 897 39.4 L 906 33.3"/><path d="M 844 13.9 L 853 13.0 L 862 14.7 L 871 18.8 L 879 24.5 L 888 31.1 L 897 37.5 L 906 42.8"/></g><g clip-path="url(#sb38)"><path d="M 868 17.2 L 876 22.5 L 885 28.9 L 894 35.5 L 903 41.2 L 911 45.3 L 920 47.0 L 929 46.1"/></g><g clip-path="url(#sb41)"><path d="M 938 13.9 L 946 13.0 L 955 14.7 L 964 18.8 L 973 24.5 L 981 31.1 L 990 37.5 L 999 42.8"/></g><g clip-path="url(#sb42)"><path d="M 961 17.2 L 970 22.5 L 979 28.9 L 987 35.5 L 996 41.2 L 1005 45.3 L 1014 47.0 L 1022 46.1"/><path d="M 961 26.7 L 970 20.6 L 979 15.9 L 987 13.3 L 996 13.3 L 1005 15.9 L 1014 20.6 L 1022 26.7"/></g><g clip-path="url(#sb43)"><path d="M 984 33.3 L 993 39.4 L 1002 44.1 L 1011 46.7 L 1019 46.7 L 1028 44.1 L 1037 39.4 L 1046 33.3"/><path d="M 984 13.9 L 993 13.0 L 1002 14.7 L 1011 18.8 L 1019 24.5 L 1028 31.1 L 1037 37.5 L 1046 42.8"/></g><g clip-path="url(#sb44)"><path d="M 1008 17.2 L 1016 22.5 L 1025 28.9 L 1034 35.5 L 1043 41.2 L 1051 45.3 L 1060 47.0 L 1069 46.1"/></g><g clip-path="url(#sb47)"><path d="M 1078 13.9 L 1086 13.0 L 1095 14.7 L 1104 18.8 L 1113 24.5 L 1121 31.1 L 1130 37.5 L 1139 42.8"/></g><g clip-path="url(#sb48)"><path d="M 1101 17.2 L 1110 22.5 L 1119 28.9 L 1127 35.5 L 1136 41.2 L 1145 45.3 L 1154 47.0 L 1162 46.1"/><path d="M 1101 26.7 L 1110 20.6 L 1119 15.9 L 1127 13.3 L 1136 13.3 L 1145 15.9 L 1154 20.6 L 1162 26.7"/></g><g clip-path="url(#sb49)"><path d="M 1124 33.3 L 1133 39.4 L 1142 44.1 L 1151 46.7 L 1159 46.7 L 1168 44.1 L 1177 39.4 L 1186 33.3"/><path d="M 1124 13.9 L 1133 13.0 L 1142 14.7 L 1151 18.8 L 1159 24.5 L 1168 31.1 L 1177 37.5 L 1186 42.8"/></g><g clip-path="url(#sb50)"><path d="M 1148 17.2 L 1156 22.5 L 1165 28.9 L 1174 35.5 L 1183 41.2 L 1191 45.3 L 1200 47.0 L 1209 46.1"/></g><g clip-path="url(#sb53)"><path d="M 1218 13.9 L 1226 13.0 L 1235 14.7 L 1244 18.8 L 1253 24.5 L 1261 31.1 L 1270 37.5 L 1279 42.8"/></g><g clip-path="url(#sb54)"><path d="M 1241 17.2 L 1250 22.5 L 1259 28.9 L 1267 35.5 L 1276 41.2 L 1285 45.3 L 1294 47.0 L 1302 46.1"/><path d="M 1241 26.7 L 1250 20.6 L 1259 15.9 L 1267 13.3 L 1276 13.3 L 1285 15.9 L 1294 20.6 L 1302 26.7"/></g><g clip-path="url(#sb55)"><path d="M 1264 33.3 L 1273 39.4 L 1282 44.1 L 1291 46.7 L 1299 46.7 L 1308 44.1 L 1317 39.4 L 1326 33.3"/><path d="M 1264 13.9 L 1273 13.0 L 1282 14.7 L 1291 18.8 L 1299 24.5 L 1308 31.1 L 1317 37.5 L 1326 42.8"/></g><g clip-path="url(#sb56)"><path d="M 1288 17.2 L 1296 22.5 L 1305 28.9 L 1314 35.5 L 1323 41.2 L 1331 45.3 L 1340 47.0 L 1349 46.1"/></g><g clip-path="url(#sb59)"><path d="M 1358 13.9 L 1366 13.0 L 1375 14.7 L 1384 18.8 L 1393 24.5 L 1401 31.1 L 1410 37.5 L 1419 42.8"/></g></g></mask><mask id="sm2" maskUnits="userSpaceOnUse" x="-20" y="-20" width="1440" height="100"><rect x="-20" y="-20" width="1440" height="100" fill="#fff"/><g fill="none" stroke="#000" stroke-width="19" stroke-linecap="butt"><g clip-path="url(#sb0)"><path d="M -19 17.2 L -10 22.5 L -1 28.9 L 7 35.5 L 16 41.2 L 25 45.3 L 34 47.0 L 42 46.1"/></g><g clip-path="url(#sb3)"><path d="M 51 13.9 L 60 13.0 L 69 14.7 L 77 18.8 L 86 24.5 L 95 31.1 L 104 37.5 L 112 42.8"/></g><g clip-path="url(#sb4)"><path d="M 74 26.7 L 83 20.6 L 92 15.9 L 101 13.3 L 109 13.3 L 118 15.9 L 127 20.6 L 136 26.7"/><path d="M 74 17.2 L 83 22.5 L 92 28.9 L 101 35.5 L 109 41.2 L 118 45.3 L 127 47.0 L 136 46.1"/></g><g clip-path="url(#sb5)"><path d="M 98 13.9 L 106 13.0 L 115 14.7 L 124 18.8 L 133 24.5 L 141 31.1 L 150 37.5 L 159 42.8"/><path d="M 98 33.3 L 106 39.4 L 115 44.1 L 124 46.7 L 133 46.7 L 141 44.1 L 150 39.4 L 159 33.3"/></g><g clip-path="url(#sb6)"><path d="M 121 17.2 L 130 22.5 L 139 28.9 L 147 35.5 L 156 41.2 L 165 45.3 L 174 47.0 L 182 46.1"/></g><g clip-path="url(#sb9)"><path d="M 191 13.9 L 200 13.0 L 209 14.7 L 217 18.8 L 226 24.5 L 235 31.1 L 244 37.5 L 252 42.8"/></g><g clip-path="url(#sb10)"><path d="M 214 26.7 L 223 20.6 L 232 15.9 L 241 13.3 L 249 13.3 L 258 15.9 L 267 20.6 L 276 26.7"/><path d="M 214 17.2 L 223 22.5 L 232 28.9 L 241 35.5 L 249 41.2 L 258 45.3 L 267 47.0 L 276 46.1"/></g><g clip-path="url(#sb11)"><path d="M 238 13.9 L 246 13.0 L 255 14.7 L 264 18.8 L 273 24.5 L 281 31.1 L 290 37.5 L 299 42.8"/><path d="M 238 33.3 L 246 39.4 L 255 44.1 L 264 46.7 L 273 46.7 L 281 44.1 L 290 39.4 L 299 33.3"/></g><g clip-path="url(#sb12)"><path d="M 261 17.2 L 270 22.5 L 279 28.9 L 287 35.5 L 296 41.2 L 305 45.3 L 314 47.0 L 322 46.1"/></g><g clip-path="url(#sb15)"><path d="M 331 13.9 L 340 13.0 L 349 14.7 L 357 18.8 L 366 24.5 L 375 31.1 L 384 37.5 L 392 42.8"/></g><g clip-path="url(#sb16)"><path d="M 354 26.7 L 363 20.6 L 372 15.9 L 381 13.3 L 389 13.3 L 398 15.9 L 407 20.6 L 416 26.7"/><path d="M 354 17.2 L 363 22.5 L 372 28.9 L 381 35.5 L 389 41.2 L 398 45.3 L 407 47.0 L 416 46.1"/></g><g clip-path="url(#sb17)"><path d="M 378 13.9 L 386 13.0 L 395 14.7 L 404 18.8 L 413 24.5 L 421 31.1 L 430 37.5 L 439 42.8"/><path d="M 378 33.3 L 386 39.4 L 395 44.1 L 404 46.7 L 413 46.7 L 421 44.1 L 430 39.4 L 439 33.3"/></g><g clip-path="url(#sb18)"><path d="M 401 17.2 L 410 22.5 L 419 28.9 L 427 35.5 L 436 41.2 L 445 45.3 L 454 47.0 L 462 46.1"/></g><g clip-path="url(#sb21)"><path d="M 471 13.9 L 480 13.0 L 489 14.7 L 497 18.8 L 506 24.5 L 515 31.1 L 524 37.5 L 532 42.8"/></g><g clip-path="url(#sb22)"><path d="M 494 26.7 L 503 20.6 L 512 15.9 L 521 13.3 L 529 13.3 L 538 15.9 L 547 20.6 L 556 26.7"/><path d="M 494 17.2 L 503 22.5 L 512 28.9 L 521 35.5 L 529 41.2 L 538 45.3 L 547 47.0 L 556 46.1"/></g><g clip-path="url(#sb23)"><path d="M 518 13.9 L 526 13.0 L 535 14.7 L 544 18.8 L 553 24.5 L 561 31.1 L 570 37.5 L 579 42.8"/><path d="M 518 33.3 L 526 39.4 L 535 44.1 L 544 46.7 L 553 46.7 L 561 44.1 L 570 39.4 L 579 33.3"/></g><g clip-path="url(#sb24)"><path d="M 541 17.2 L 550 22.5 L 559 28.9 L 567 35.5 L 576 41.2 L 585 45.3 L 594 47.0 L 602 46.1"/></g><g clip-path="url(#sb27)"><path d="M 611 13.9 L 620 13.0 L 629 14.7 L 637 18.8 L 646 24.5 L 655 31.1 L 664 37.5 L 672 42.8"/></g><g clip-path="url(#sb28)"><path d="M 634 26.7 L 643 20.6 L 652 15.9 L 661 13.3 L 669 13.3 L 678 15.9 L 687 20.6 L 696 26.7"/><path d="M 634 17.2 L 643 22.5 L 652 28.9 L 661 35.5 L 669 41.2 L 678 45.3 L 687 47.0 L 696 46.1"/></g><g clip-path="url(#sb29)"><path d="M 658 13.9 L 666 13.0 L 675 14.7 L 684 18.8 L 693 24.5 L 701 31.1 L 710 37.5 L 719 42.8"/><path d="M 658 33.3 L 666 39.4 L 675 44.1 L 684 46.7 L 693 46.7 L 701 44.1 L 710 39.4 L 719 33.3"/></g><g clip-path="url(#sb30)"><path d="M 681 17.2 L 690 22.5 L 699 28.9 L 707 35.5 L 716 41.2 L 725 45.3 L 734 47.0 L 742 46.1"/></g><g clip-path="url(#sb33)"><path d="M 751 13.9 L 760 13.0 L 769 14.7 L 777 18.8 L 786 24.5 L 795 31.1 L 804 37.5 L 812 42.8"/></g><g clip-path="url(#sb34)"><path d="M 774 26.7 L 783 20.6 L 792 15.9 L 801 13.3 L 809 13.3 L 818 15.9 L 827 20.6 L 836 26.7"/><path d="M 774 17.2 L 783 22.5 L 792 28.9 L 801 35.5 L 809 41.2 L 818 45.3 L 827 47.0 L 836 46.1"/></g><g clip-path="url(#sb35)"><path d="M 798 13.9 L 806 13.0 L 815 14.7 L 824 18.8 L 833 24.5 L 841 31.1 L 850 37.5 L 859 42.8"/><path d="M 798 33.3 L 806 39.4 L 815 44.1 L 824 46.7 L 833 46.7 L 841 44.1 L 850 39.4 L 859 33.3"/></g><g clip-path="url(#sb36)"><path d="M 821 17.2 L 830 22.5 L 839 28.9 L 847 35.5 L 856 41.2 L 865 45.3 L 874 47.0 L 882 46.1"/></g><g clip-path="url(#sb39)"><path d="M 891 13.9 L 900 13.0 L 909 14.7 L 917 18.8 L 926 24.5 L 935 31.1 L 944 37.5 L 952 42.8"/></g><g clip-path="url(#sb40)"><path d="M 914 26.7 L 923 20.6 L 932 15.9 L 941 13.3 L 949 13.3 L 958 15.9 L 967 20.6 L 976 26.7"/><path d="M 914 17.2 L 923 22.5 L 932 28.9 L 941 35.5 L 949 41.2 L 958 45.3 L 967 47.0 L 976 46.1"/></g><g clip-path="url(#sb41)"><path d="M 938 13.9 L 946 13.0 L 955 14.7 L 964 18.8 L 973 24.5 L 981 31.1 L 990 37.5 L 999 42.8"/><path d="M 938 33.3 L 946 39.4 L 955 44.1 L 964 46.7 L 973 46.7 L 981 44.1 L 990 39.4 L 999 33.3"/></g><g clip-path="url(#sb42)"><path d="M 961 17.2 L 970 22.5 L 979 28.9 L 987 35.5 L 996 41.2 L 1005 45.3 L 1014 47.0 L 1022 46.1"/></g><g clip-path="url(#sb45)"><path d="M 1031 13.9 L 1040 13.0 L 1049 14.7 L 1057 18.8 L 1066 24.5 L 1075 31.1 L 1084 37.5 L 1092 42.8"/></g><g clip-path="url(#sb46)"><path d="M 1054 26.7 L 1063 20.6 L 1072 15.9 L 1081 13.3 L 1089 13.3 L 1098 15.9 L 1107 20.6 L 1116 26.7"/><path d="M 1054 17.2 L 1063 22.5 L 1072 28.9 L 1081 35.5 L 1089 41.2 L 1098 45.3 L 1107 47.0 L 1116 46.1"/></g><g clip-path="url(#sb47)"><path d="M 1078 13.9 L 1086 13.0 L 1095 14.7 L 1104 18.8 L 1113 24.5 L 1121 31.1 L 1130 37.5 L 1139 42.8"/><path d="M 1078 33.3 L 1086 39.4 L 1095 44.1 L 1104 46.7 L 1113 46.7 L 1121 44.1 L 1130 39.4 L 1139 33.3"/></g><g clip-path="url(#sb48)"><path d="M 1101 17.2 L 1110 22.5 L 1119 28.9 L 1127 35.5 L 1136 41.2 L 1145 45.3 L 1154 47.0 L 1162 46.1"/></g><g clip-path="url(#sb51)"><path d="M 1171 13.9 L 1180 13.0 L 1189 14.7 L 1197 18.8 L 1206 24.5 L 1215 31.1 L 1224 37.5 L 1232 42.8"/></g><g clip-path="url(#sb52)"><path d="M 1194 26.7 L 1203 20.6 L 1212 15.9 L 1221 13.3 L 1229 13.3 L 1238 15.9 L 1247 20.6 L 1256 26.7"/><path d="M 1194 17.2 L 1203 22.5 L 1212 28.9 L 1221 35.5 L 1229 41.2 L 1238 45.3 L 1247 47.0 L 1256 46.1"/></g><g clip-path="url(#sb53)"><path d="M 1218 13.9 L 1226 13.0 L 1235 14.7 L 1244 18.8 L 1253 24.5 L 1261 31.1 L 1270 37.5 L 1279 42.8"/><path d="M 1218 33.3 L 1226 39.4 L 1235 44.1 L 1244 46.7 L 1253 46.7 L 1261 44.1 L 1270 39.4 L 1279 33.3"/></g><g clip-path="url(#sb54)"><path d="M 1241 17.2 L 1250 22.5 L 1259 28.9 L 1267 35.5 L 1276 41.2 L 1285 45.3 L 1294 47.0 L 1302 46.1"/></g><g clip-path="url(#sb57)"><path d="M 1311 13.9 L 1320 13.0 L 1329 14.7 L 1337 18.8 L 1346 24.5 L 1355 31.1 L 1364 37.5 L 1372 42.8"/></g><g clip-path="url(#sb58)"><path d="M 1334 26.7 L 1343 20.6 L 1352 15.9 L 1361 13.3 L 1369 13.3 L 1378 15.9 L 1387 20.6 L 1396 26.7"/><path d="M 1334 17.2 L 1343 22.5 L 1352 28.9 L 1361 35.5 L 1369 41.2 L 1378 45.3 L 1387 47.0 L 1396 46.1"/></g><g clip-path="url(#sb59)"><path d="M 1358 13.9 L 1366 13.0 L 1375 14.7 L 1384 18.8 L 1393 24.5 L 1401 31.1 L 1410 37.5 L 1419 42.8"/><path d="M 1358 33.3 L 1366 39.4 L 1375 44.1 L 1384 46.7 L 1393 46.7 L 1401 44.1 L 1410 39.4 L 1419 33.3"/></g></g></mask></defs><g fill="none" stroke-width="14" stroke-linecap="round"><path d="M 0 30.0 L 7 35.3 L 14 40.0 L 21 43.8 L 28 46.2 L 35 47.0 L 42 46.2 L 49 43.8 L 56 40.0 L 63 35.3 L 70 30.0 L 77 24.7 L 84 20.0 L 91 16.2 L 98 13.8 L 105 13.0 L 112 13.8 L 119 16.2 L 126 20.0 L 133 24.7 L 140 30.0 L 147 35.3 L 154 40.0 L 161 43.8 L 168 46.2 L 175 47.0 L 182 46.2 L 189 43.8 L 196 40.0 L 203 35.3 L 210 30.0 L 217 24.7 L 224 20.0 L 231 16.2 L 238 13.8 L 245 13.0 L 252 13.8 L 259 16.2 L 266 20.0 L 273 24.7 L 280 30.0 L 287 35.3 L 294 40.0 L 301 43.8 L 308 46.2 L 315 47.0 L 322 46.2 L 329 43.8 L 336 40.0 L 343 35.3 L 350 30.0 L 357 24.7 L 364 20.0 L 371 16.2 L 378 13.8 L 385 13.0 L 392 13.8 L 399 16.2 L 406 20.0 L 413 24.7 L 420 30.0 L 427 35.3 L 434 40.0 L 441 43.8 L 448 46.2 L 455 47.0 L 462 46.2 L 469 43.8 L 476 40.0 L 483 35.3 L 490 30.0 L 497 24.7 L 504 20.0 L 511 16.2 L 518 13.8 L 525 13.0 L 532 13.8 L 539 16.2 L 546 20.0 L 553 24.7 L 560 30.0 L 567 35.3 L 574 40.0 L 581 43.8 L 588 46.2 L 595 47.0 L 602 46.2 L 609 43.8 L 616 40.0 L 623 35.3 L 630 30.0 L 637 24.7 L 644 20.0 L 651 16.2 L 658 13.8 L 665 13.0 L 672 13.8 L 679 16.2 L 686 20.0 L 693 24.7 L 700 30.0 L 707 35.3 L 714 40.0 L 721 43.8 L 728 46.2 L 735 47.0 L 742 46.2 L 749 43.8 L 756 40.0 L 763 35.3 L 770 30.0 L 777 24.7 L 784 20.0 L 791 16.2 L 798 13.8 L 805 13.0 L 812 13.8 L 819 16.2 L 826 20.0 L 833 24.7 L 840 30.0 L 847 35.3 L 854 40.0 L 861 43.8 L 868 46.2 L 875 47.0 L 882 46.2 L 889 43.8 L 896 40.0 L 903 35.3 L 910 30.0 L 917 24.7 L 924 20.0 L 931 16.2 L 938 13.8 L 945 13.0 L 952 13.8 L 959 16.2 L 966 20.0 L 973 24.7 L 980 30.0 L 987 35.3 L 994 40.0 L 1001 43.8 L 1008 46.2 L 1015 47.0 L 1022 46.2 L 1029 43.8 L 1036 40.0 L 1043 35.3 L 1050 30.0 L 1057 24.7 L 1064 20.0 L 1071 16.2 L 1078 13.8 L 1085 13.0 L 1092 13.8 L 1099 16.2 L 1106 20.0 L 1113 24.7 L 1120 30.0 L 1127 35.3 L 1134 40.0 L 1141 43.8 L 1148 46.2 L 1155 47.0 L 1162 46.2 L 1169 43.8 L 1176 40.0 L 1183 35.3 L 1190 30.0 L 1197 24.7 L 1204 20.0 L 1211 16.2 L 1218 13.8 L 1225 13.0 L 1232 13.8 L 1239 16.2 L 1246 20.0 L 1253 24.7 L 1260 30.0 L 1267 35.3 L 1274 40.0 L 1281 43.8 L 1288 46.2 L 1295 47.0 L 1302 46.2 L 1309 43.8 L 1316 40.0 L 1323 35.3 L 1330 30.0 L 1337 24.7 L 1344 20.0 L 1351 16.2 L 1358 13.8 L 1365 13.0 L 1372 13.8 L 1379 16.2 L 1386 20.0 L 1393 24.7 L 1400 30.0" stroke="var(--strand-a)" mask="url(#sm0)"/><path d="M 0 44.7 L 7 41.4 L 14 36.9 L 21 31.8 L 28 26.5 L 35 21.5 L 42 17.4 L 49 14.5 L 56 13.1 L 63 13.4 L 70 15.3 L 77 18.6 L 84 23.1 L 91 28.2 L 98 33.5 L 105 38.5 L 112 42.6 L 119 45.5 L 126 46.9 L 133 46.6 L 140 44.7 L 147 41.4 L 154 36.9 L 161 31.8 L 168 26.5 L 175 21.5 L 182 17.4 L 189 14.5 L 196 13.1 L 203 13.4 L 210 15.3 L 217 18.6 L 224 23.1 L 231 28.2 L 238 33.5 L 245 38.5 L 252 42.6 L 259 45.5 L 266 46.9 L 273 46.6 L 280 44.7 L 287 41.4 L 294 36.9 L 301 31.8 L 308 26.5 L 315 21.5 L 322 17.4 L 329 14.5 L 336 13.1 L 343 13.4 L 350 15.3 L 357 18.6 L 364 23.1 L 371 28.2 L 378 33.5 L 385 38.5 L 392 42.6 L 399 45.5 L 406 46.9 L 413 46.6 L 420 44.7 L 427 41.4 L 434 36.9 L 441 31.8 L 448 26.5 L 455 21.5 L 462 17.4 L 469 14.5 L 476 13.1 L 483 13.4 L 490 15.3 L 497 18.6 L 504 23.1 L 511 28.2 L 518 33.5 L 525 38.5 L 532 42.6 L 539 45.5 L 546 46.9 L 553 46.6 L 560 44.7 L 567 41.4 L 574 36.9 L 581 31.8 L 588 26.5 L 595 21.5 L 602 17.4 L 609 14.5 L 616 13.1 L 623 13.4 L 630 15.3 L 637 18.6 L 644 23.1 L 651 28.2 L 658 33.5 L 665 38.5 L 672 42.6 L 679 45.5 L 686 46.9 L 693 46.6 L 700 44.7 L 707 41.4 L 714 36.9 L 721 31.8 L 728 26.5 L 735 21.5 L 742 17.4 L 749 14.5 L 756 13.1 L 763 13.4 L 770 15.3 L 777 18.6 L 784 23.1 L 791 28.2 L 798 33.5 L 805 38.5 L 812 42.6 L 819 45.5 L 826 46.9 L 833 46.6 L 840 44.7 L 847 41.4 L 854 36.9 L 861 31.8 L 868 26.5 L 875 21.5 L 882 17.4 L 889 14.5 L 896 13.1 L 903 13.4 L 910 15.3 L 917 18.6 L 924 23.1 L 931 28.2 L 938 33.5 L 945 38.5 L 952 42.6 L 959 45.5 L 966 46.9 L 973 46.6 L 980 44.7 L 987 41.4 L 994 36.9 L 1001 31.8 L 1008 26.5 L 1015 21.5 L 1022 17.4 L 1029 14.5 L 1036 13.1 L 1043 13.4 L 1050 15.3 L 1057 18.6 L 1064 23.1 L 1071 28.2 L 1078 33.5 L 1085 38.5 L 1092 42.6 L 1099 45.5 L 1106 46.9 L 1113 46.6 L 1120 44.7 L 1127 41.4 L 1134 36.9 L 1141 31.8 L 1148 26.5 L 1155 21.5 L 1162 17.4 L 1169 14.5 L 1176 13.1 L 1183 13.4 L 1190 15.3 L 1197 18.6 L 1204 23.1 L 1211 28.2 L 1218 33.5 L 1225 38.5 L 1232 42.6 L 1239 45.5 L 1246 46.9 L 1253 46.6 L 1260 44.7 L 1267 41.4 L 1274 36.9 L 1281 31.8 L 1288 26.5 L 1295 21.5 L 1302 17.4 L 1309 14.5 L 1316 13.1 L 1323 13.4 L 1330 15.3 L 1337 18.6 L 1344 23.1 L 1351 28.2 L 1358 33.5 L 1365 38.5 L 1372 42.6 L 1379 45.5 L 1386 46.9 L 1393 46.6 L 1400 44.7" stroke="var(--strand-b)" mask="url(#sm1)"/><path d="M 0 15.3 L 7 13.4 L 14 13.1 L 21 14.5 L 28 17.4 L 35 21.5 L 42 26.5 L 49 31.8 L 56 36.9 L 63 41.4 L 70 44.7 L 77 46.6 L 84 46.9 L 91 45.5 L 98 42.6 L 105 38.5 L 112 33.5 L 119 28.2 L 126 23.1 L 133 18.6 L 140 15.3 L 147 13.4 L 154 13.1 L 161 14.5 L 168 17.4 L 175 21.5 L 182 26.5 L 189 31.8 L 196 36.9 L 203 41.4 L 210 44.7 L 217 46.6 L 224 46.9 L 231 45.5 L 238 42.6 L 245 38.5 L 252 33.5 L 259 28.2 L 266 23.1 L 273 18.6 L 280 15.3 L 287 13.4 L 294 13.1 L 301 14.5 L 308 17.4 L 315 21.5 L 322 26.5 L 329 31.8 L 336 36.9 L 343 41.4 L 350 44.7 L 357 46.6 L 364 46.9 L 371 45.5 L 378 42.6 L 385 38.5 L 392 33.5 L 399 28.2 L 406 23.1 L 413 18.6 L 420 15.3 L 427 13.4 L 434 13.1 L 441 14.5 L 448 17.4 L 455 21.5 L 462 26.5 L 469 31.8 L 476 36.9 L 483 41.4 L 490 44.7 L 497 46.6 L 504 46.9 L 511 45.5 L 518 42.6 L 525 38.5 L 532 33.5 L 539 28.2 L 546 23.1 L 553 18.6 L 560 15.3 L 567 13.4 L 574 13.1 L 581 14.5 L 588 17.4 L 595 21.5 L 602 26.5 L 609 31.8 L 616 36.9 L 623 41.4 L 630 44.7 L 637 46.6 L 644 46.9 L 651 45.5 L 658 42.6 L 665 38.5 L 672 33.5 L 679 28.2 L 686 23.1 L 693 18.6 L 700 15.3 L 707 13.4 L 714 13.1 L 721 14.5 L 728 17.4 L 735 21.5 L 742 26.5 L 749 31.8 L 756 36.9 L 763 41.4 L 770 44.7 L 777 46.6 L 784 46.9 L 791 45.5 L 798 42.6 L 805 38.5 L 812 33.5 L 819 28.2 L 826 23.1 L 833 18.6 L 840 15.3 L 847 13.4 L 854 13.1 L 861 14.5 L 868 17.4 L 875 21.5 L 882 26.5 L 889 31.8 L 896 36.9 L 903 41.4 L 910 44.7 L 917 46.6 L 924 46.9 L 931 45.5 L 938 42.6 L 945 38.5 L 952 33.5 L 959 28.2 L 966 23.1 L 973 18.6 L 980 15.3 L 987 13.4 L 994 13.1 L 1001 14.5 L 1008 17.4 L 1015 21.5 L 1022 26.5 L 1029 31.8 L 1036 36.9 L 1043 41.4 L 1050 44.7 L 1057 46.6 L 1064 46.9 L 1071 45.5 L 1078 42.6 L 1085 38.5 L 1092 33.5 L 1099 28.2 L 1106 23.1 L 1113 18.6 L 1120 15.3 L 1127 13.4 L 1134 13.1 L 1141 14.5 L 1148 17.4 L 1155 21.5 L 1162 26.5 L 1169 31.8 L 1176 36.9 L 1183 41.4 L 1190 44.7 L 1197 46.6 L 1204 46.9 L 1211 45.5 L 1218 42.6 L 1225 38.5 L 1232 33.5 L 1239 28.2 L 1246 23.1 L 1253 18.6 L 1260 15.3 L 1267 13.4 L 1274 13.1 L 1281 14.5 L 1288 17.4 L 1295 21.5 L 1302 26.5 L 1309 31.8 L 1316 36.9 L 1323 41.4 L 1330 44.7 L 1337 46.6 L 1344 46.9 L 1351 45.5 L 1358 42.6 L 1365 38.5 L 1372 33.5 L 1379 28.2 L 1386 23.1 L 1393 18.6 L 1400 15.3" stroke="var(--strand-c)" mask="url(#sm2)"/></g></svg></div>
+
+  <!-- ====================================================================
+       2. LOS PUEBLOS
+       Familia de layout: banda tipografica desbordada. Nombra a los cinco
+       pueblos aunque el archivo fotografico hoy solo cubra a uno.
+       ==================================================================== -->
+  <section class="peoples" aria-label="Pueblos que cubre el Observatorio">
+    <div class="peoples__track">
+      <span>Indígenas</span><i aria-hidden="true">/</i>
+      <span>Negros</span><i aria-hidden="true">/</i>
+      <span>Afrocolombianos</span><i aria-hidden="true">/</i>
+      <span>Raizales</span><i aria-hidden="true">/</i>
+      <span>Palenqueros</span><i aria-hidden="true">/</i>
+      <span>Rrom</span>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       3. QUÉ ES
+       Familia de layout: editorial a tres columnas con imagenes desplazadas
+       a distinta altura, mas una insignia circular.
+       ==================================================================== -->
+  <section class="about" id="que-es" aria-labelledby="titulo-que-es">
+    <div class="container about__grid">
+
+      <figure class="about__figure about__figure--a reveal">
+        <picture>
+          <source srcset="assets/retrato-wayuu.webp" type="image/webp">
+          <img src="assets/retrato-wayuu.jpg"
+               alt="Mujer mayor del pueblo Wayuu con pañuelo blanco en la cabeza, en La Guajira."
+               width="720" height="900" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+
+      <div class="about__body reveal">
+
+        <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+          <defs>
+            <path id="badge-path"
+                  d="M 100,100 m -74,0 a 74,74 0 1,1 148,0 a 74,74 0 1,1 -148,0"/>
+          </defs>
+          <text><textPath href="#badge-path" startOffset="0">
+            OBSERVATORIO DE DD.HH. DE LOS PUEBLOS ÉTNICOS &#160;&#8226;&#160;
+          </textPath></text>
+        </svg>
+
+        <h2 class="section-title" id="titulo-que-es">Qué es el Observatorio</h2>
+
+        <p class="about__lede">
+          TRENZAS hace seguimiento a la situación de derechos humanos de los
+          pueblos y comunidades étnicas de Colombia, y reúne en un solo lugar
+          información que hoy está dispersa.
+        </p>
+        <p>
+          El Observatorio articula los registros de las duplas de atención de
+          la Defensoría en territorio con alertas tempranas, resoluciones
+          defensoriales, decisiones judiciales y los informes que producen las
+          organizaciones propias de los pueblos. Ese material se organiza por
+          eje temático y por territorio para que pueda consultarse sin
+          conocimiento técnico previo.
+        </p>
+        <p>
+          El propósito no se agota en documentar. La información existe para
+          quedar en manos de quienes la necesitan al momento de exigir
+          garantías.
+        </p>
+
+        <div class="about__note">
+          <h3>Por qué se llama TRENZAS</h3>
+          <p>
+            La trenza guarda información. La tradición oral palenquera recoge
+            que mujeres esclavizadas tejieron en su cabello rutas de huida
+            hacia los palenques y escondieron semillas entre las hebras. El
+            nombre toma esa idea: hebras separadas que, entrelazadas,
+            sostienen y transmiten aquello que hace falta para seguir
+            adelante.
+          </p>
+        </div>
+
+      </div>
+
+      <figure class="about__figure about__figure--b reveal">
+        <picture>
+          <source srcset="assets/retrato-puinave.webp" type="image/webp">
+          <img src="assets/retrato-puinave.jpg"
+               alt="Niña del pueblo Puinave recostada en una hamaca, en Inírida, Guainía."
+               width="720" height="920" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       4. DECLARACIÓN
+       Familia de layout: fotografia a sangre con una sola frase encima.
+       ==================================================================== -->
+  <section class="statement" aria-label="Propósito del Observatorio">
+    <picture class="statement__media">
+      <source srcset="assets/banda-guajira.webp" type="image/webp">
+      <img src="assets/banda-guajira.jpg"
+           alt="Dos mujeres Wayuu junto a una vivienda de barro bajo un árbol, en La Guajira."
+           width="1760" height="790" loading="lazy" decoding="async">
+    </picture>
+    <div class="statement__scrim" aria-hidden="true"></div>
+    <div class="container statement__inner">
+      <p class="statement__text">
+        Un derecho que nadie documenta es un derecho que cuesta el doble
+        reclamar.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       5. CÓMO FUNCIONA
+       Familia de layout: flujo horizontal de tres pasos con hilo continuo.
+       ==================================================================== -->
+  <section class="method" id="como-funciona" aria-labelledby="titulo-metodo">
+    <div class="container">
+
+      <div class="method__head reveal">
+        <h2 class="section-title" id="titulo-metodo">Cómo se construye la información</h2>
+        <p>
+          Ningún dato llega solo a la página. Pasa por tres momentos, y en cada
+          uno cambia de manos.
+        </p>
+      </div>
+
+      <div class="method__flow">
+        <article class="step reveal">
+          <h3>Registro en territorio</h3>
+          <p>
+            Las duplas de atención de la Defensoría documentan casos,
+            solicitudes y situaciones de riesgo en las regiones con presencia
+            de comunidades étnicas, siguiendo los protocolos de enfoque
+            diferencial de la entidad.
+          </p>
+        </article>
+        <article class="step reveal">
+          <h3>Contraste con fuentes externas</h3>
+          <p>
+            Esos registros se cruzan con censos oficiales, jurisprudencia de la
+            Corte Constitucional, decisiones de organismos internacionales y
+            reportes de organizaciones étnicas de base.
+          </p>
+        </article>
+        <article class="step reveal">
+          <h3>Análisis y sistematización</h3>
+          <p>
+            El equipo del Observatorio depura, categoriza y convierte el
+            material en productos consultables, con la metodología y las
+            fuentes declaradas en cada publicación.
+          </p>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       6. EJES TEMÁTICOS
+       Familia de layout: bandas con hebra lateral de color.
+       Sin fotografia a proposito: asignar una comunidad concreta al eje de
+       discriminacion o al de violencia politica la senalaria como ejemplo
+       de ese problema. El color de cada banda corresponde a una hebra.
+       ==================================================================== -->
+  <section class="axes" id="ejes" aria-labelledby="titulo-ejes">
+    <div class="container">
+
+      <div class="axes__head reveal">
+        <h2 class="section-title" id="titulo-ejes">Ejes temáticos</h2>
+        <p>
+          Tres hebras del mismo tejido. Cada eje agrupa el seguimiento, el
+          análisis y los productos del Observatorio sobre un ámbito específico
+          de derechos.
+        </p>
+      </div>
+
+      <article class="axis reveal" aria-labelledby="eje-igualdad">
+        <h3 class="axis__title" id="eje-igualdad">Igualdad y No Discriminación</h3>
+        <div class="axis__body">
+          <p>
+            El racismo estructural rara vez aparece como un hecho aislado. Se
+            expresa en el acceso desigual a los servicios de salud, en la
+            ausencia de intérpretes en los despachos judiciales, en el trato
+            que reciben niñas y niños en las instituciones educativas y en los
+            discursos que circulan por medios y redes sociales. Este eje sigue
+            esas expresiones y documenta las barreras concretas que enfrentan
+            las personas étnicas cuando intentan hacer valer sus derechos ante
+            el Estado.
+          </p>
+          <ul class="axis__tags">
+            <li>Racismo estructural</li>
+            <li>Acceso a la justicia</li>
+            <li>Discurso de odio</li>
+            <li>Enfoque diferencial</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="axis reveal" aria-labelledby="eje-participacion">
+        <h3 class="axis__title" id="eje-participacion">Participación Política de las Mujeres Étnicas</h3>
+        <div class="axis__body">
+          <p>
+            Las mujeres indígenas, negras, afrocolombianas, raizales,
+            palenqueras y Rrom sostienen buena parte de la vida organizativa de
+            sus comunidades, y aun así encuentran obstáculos persistentes para
+            llegar a los espacios donde se decide. Este eje observa su presencia
+            en cargos de elección popular, en las instancias de gobierno propio
+            y en los escenarios de consulta previa, y registra las violencias
+            que enfrentan cuando ejercen liderazgo.
+          </p>
+          <ul class="axis__tags">
+            <li>Representación</li>
+            <li>Liderazgo comunitario</li>
+            <li>Violencia política</li>
+            <li>Circunscripciones especiales</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="axis reveal" aria-labelledby="eje-autonomia">
+        <h3 class="axis__title" id="eje-autonomia">Autonomía y Gobierno Propio</h3>
+        <div class="axis__body">
+          <p>
+            El derecho a decidir sobre el territorio y a regirse por normas
+            propias está reconocido en la Constitución, pero su ejercicio
+            depende de condiciones que no siempre se cumplen. Este eje hace
+            seguimiento a los procesos de consulta previa, al funcionamiento de
+            la jurisdicción especial indígena, a la operación de los consejos
+            comunitarios y a las tensiones entre el ordenamiento estatal y los
+            sistemas de gobierno propio de cada pueblo.
+          </p>
+          <ul class="axis__tags">
+            <li>Consulta previa</li>
+            <li>Jurisdicción especial indígena</li>
+            <li>Consejos comunitarios</li>
+            <li>Territorio</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       7. RECURSOS
+       Familia de layout: bento asimetrico de cinco celdas para cinco
+       recursos. Fila 1: 3+3. Fila 2: 2+2+2. Sin celdas vacias.
+       ==================================================================== -->
+  <section class="resources" id="recursos" aria-labelledby="titulo-recursos">
+    <div class="container">
+
+      <div class="resources__head reveal">
+        <h2 class="section-title" id="titulo-recursos">Recursos y herramientas de consulta</h2>
+        <p>
+          La capa de profundización. Material para quien necesita ir más allá
+          del panorama general: citar una fuente, preparar una acción o
+          formarse en el tema.
+        </p>
+      </div>
+
+      <div class="bento">
+
+        <a class="tile tile--wide tile--photo reveal" href="#" style="--foco: 50% 38%">
+          <picture>
+            <source srcset="assets/territorio-uwa.webp" type="image/webp">
+            <img src="assets/territorio-uwa.jpg"
+                 alt="Familia U'wa a caballo por un sendero de montaña en la Sierra Nevada del Cocuy."
+                 width="1040" height="780" loading="lazy" decoding="async">
+          </picture>
+          <h3>Contexto territorial</h3>
+          <p>
+            Fichas por departamento y municipio con presencia de resguardos,
+            consejos comunitarios y kumpañy, con la situación de derechos
+            documentada en cada uno.
+          </p>
+          <span class="tile__cta">Abrir el mapa</span>
+        </a>
+
+        <a class="tile tile--wide tile--tint reveal" href="#">
+          <h3>Visualizaciones e infografías</h3>
+          <p>
+            Series gráficas sobre las tendencias que sigue el Observatorio,
+            descargables y con licencia abierta para uso pedagógico y
+            comunitario.
+          </p>
+          <span class="tile__cta">Ver la galería</span>
+        </a>
+
+        <a class="tile tile--photo reveal" href="#" style="--foco: 50% 42%">
+          <picture>
+            <source srcset="assets/asamblea-embera.webp" type="image/webp">
+            <img src="assets/asamblea-embera.jpg"
+                 alt="Integrantes de la comunidad Embera Katío reunidos en una asamblea en Dabeiba, Antioquia."
+                 width="860" height="670" loading="lazy" decoding="async">
+          </picture>
+          <h3>Productos de investigación</h3>
+          <p>
+            Informes temáticos, documentos de trabajo y análisis de coyuntura
+            del equipo del Observatorio.
+          </p>
+          <span class="tile__cta">Ver publicaciones</span>
+        </a>
+
+        <a class="tile tile--weave reveal" href="#">
+          <h3>Repositorio documental</h3>
+          <p>
+            Sentencias, resoluciones defensoriales, autos de seguimiento y
+            normativa aplicable, organizados por eje y por pueblo.
+          </p>
+          <span class="tile__cta">Buscar documentos</span>
+        </a>
+
+        <a class="tile tile--photo reveal" href="#" style="--foco: 58% 30%">
+          <picture>
+            <source srcset="assets/rio-wounaan.webp" type="image/webp">
+            <img src="assets/rio-wounaan.jpg"
+                 alt="Integrantes del pueblo Wounaan a la orilla del río Pichimá, en el Chocó."
+                 width="860" height="670" loading="lazy" decoding="async">
+          </picture>
+          <h3>Enlaces de interés</h3>
+          <p>
+            Rutas de atención, entidades competentes y observatorios aliados en
+            Colombia y en la región.
+          </p>
+          <span class="tile__cta">Ver el directorio</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================================================================
+     BORRAR ESTE BLOQUE COMPLETO cuando entre el texto oficial.
+     ====================================================================== -->
+<aside class="draft-notice" id="aviso-borrador" role="note">
+  <span class="draft-notice__label">Borrador</span>
+  <span class="draft-notice__text">
+    Texto sin validar. Fotografías pendientes de derechos, consentimiento y
+    crédito. Faltan imágenes de comunidades negras, raizales, palenqueras
+    y Rrom.
+  </span>
+  <button class="draft-notice__close" type="button" data-close-notice>
+    Ocultar
+  </button>
+</aside>
+
+<script src="main.js" defer></script>
+</body>
+</html>
